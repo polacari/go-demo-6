@@ -1,0 +1,106 @@
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-2fk5c[0m
+{"level":"warn","ts":1570008830.146354,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1570008830.1470718,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-cm8kg[0m
+{"level":"warn","ts":1570008831.4401631,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1570008831.4413652,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/go-demo-6\""}
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-polacari-go-demo-6-master-dnhf5[0m
+{"level":"warn","ts":1570008838.5405653,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1570008838.8579967,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/********/go-demo-6.git @ v1.0.413 in path /workspace/source"}
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:4be519c43e3b333ac502594ba2a8ffba496421b7
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-make-build[0m
+go: finding github.com/stretchr/objx v0.1.1
+go: finding github.com/pmezard/go-difflib v1.0.0
+go: finding github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: finding github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+go: finding github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: finding github.com/stretchr/testify v1.2.2
+go: finding github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: finding github.com/golang/protobuf v1.2.0
+go: finding github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: finding gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+go: finding github.com/prometheus/client_golang v0.9.2
+go: finding github.com/davecgh/go-spew v1.1.1
+go: finding golang.org/x/net v0.0.0-20181201002055-351d144fa1fc
+go: finding golang.org/x/sync v0.0.0-20181108010431-42b317875d0f
+go: downloading github.com/prometheus/client_golang v0.9.2
+go: downloading gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+go: extracting github.com/prometheus/client_golang v0.9.2
+go: downloading github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+go: downloading github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: downloading github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: downloading github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: downloading github.com/golang/protobuf v1.2.0
+go: extracting github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: extracting github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: extracting github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+go: extracting gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+go: extracting github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: downloading github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: extracting github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: extracting github.com/golang/protobuf v1.2.0
+CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/go-demo-6 main.go
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] No base image, nothing to extract            
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking sn**shot of full filesystem...        
+[36mINFO[0m[0000] EXPOSE 8080                                  
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] No files changed in this command, skipping sn**shotting. 
+[36mINFO[0m[0000] ENTRYPOINT ["/go-demo-6"]                    
+[36mINFO[0m[0000] No files changed in this command, skipping sn**shotting. 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] COPY ./bin/ /                                
+[36mINFO[0m[0000] Taking sn**shot of files...                  
+ERROR: logging before flag.Parse: E1002 09:34:09.957770      10 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E1002 09:34:09.961044      10 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2019/10/02 09:34:10 pushed blob: sha256:8dfbba051557c12d7eb9727b9541b33625365456538d6ce6877504ae354bc5a6
+2019/10/02 09:34:10 pushed blob: sha256:15350ba9e9ad8f7823a3d4412f1aef62f14535ae0b951af03e7213789a270538
+2019/10/02 09:34:10 10.31.254.14:5000/********/go-demo-6:1.0.413: digest: sha256:b9e7c7f5c65a605cb088e5e716440b55ce4dc0e8f343fd1d4ab066b95f633d85 size: 428
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/go-demo-6 to an unshallow repository
+Generating change log from git ref 58ff4e2822b3d3b36d1fc8585cd004b3cb737eb5 => 914d3b2ce9aab8d0d7b7c08771ab725f8c157bf6
+WARNING: No release found for ********/go-demo-6 and tag v1.0.413 so creating a new release
+Updated the release information at https://github.com/********/go-demo-6/releases/tag/v1.0.413
+generated: /workspace/source/charts/go-demo-6/templates/release.yaml
+Created Release go-demo-6-1-0-413 resource in namespace **
+Updating PipelineActivity ********-go-demo-6-master-3 with version 1.0.413
+Updated PipelineActivities ********-go-demo-6-master-3 with release notes URL: https://github.com/********/go-demo-6/releases/tag/v1.0.413
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.google**is.com https://storage.google**is.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.google**is.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file go-demo-6-1.0.413.tgz to http://jenkins-x-chartmuseum:8080/**i/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mpolacari-go-demo-6-master-c4ds6-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/jx/issues/2410
+Promoting **p go-demo-6 version 1.0.413 to namespace **-staging
+Created Pull Request: https://github.com/********/environment-jx-rocks-staging/pull/4
+Pull Request https://github.com/********/environment-jx-rocks-staging/pull/4 is merged at sha 0fcc0c5a40716236c29ff2f025c1e272133ed403
+Pull Request merged but we are not waiting for the update pipeline to complete!
